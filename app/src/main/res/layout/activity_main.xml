@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/manysteve"
+
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/buttonCool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cool"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <Button
+        android:id="@+id/buttonHi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonCool"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCool"
+        app:layout_constraintTop_toTopOf="@+id/buttonCool" />
+
+    <Button
+        android:id="@+id/buttonIDidntAsk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I didn't ask for this"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCool"
+        app:layout_constraintStart_toStartOf="@+id/buttonCool"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCool" />
+
+    <Button
+        android:id="@+id/buttonImSorry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm Sorry"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonIDidntAsk"
+        app:layout_constraintEnd_toEndOf="@+id/buttonHi"
+        app:layout_constraintStart_toStartOf="@+id/buttonHi"
+        app:layout_constraintTop_toTopOf="@+id/buttonIDidntAsk" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
